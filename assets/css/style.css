@@ -29,7 +29,7 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
     }
 
 .wrapper {
-     max-width:980px;
+     width:980px;
 }
 
 .nav-bar {
@@ -105,8 +105,14 @@ a:hover {
     }
 
 main {
-     padding:15px;
+     padding:10px;
      margin-top:15px;
+}
+
+.main-content {
+     display:flex;
+     flex-direction:row;
+     align-items:flex-start;
 }
 
 header ul {
@@ -114,18 +120,71 @@ header ul {
      flex-direction:row;
 }
 
+.flex-container {
+     display:flex;
+     flex-direction:row;
+     flex-wrap:wrap;
+     justify-content:space-around;
+     align-content:flex-start;
+}
+
+figure {
+     margin:0;
+     padding-bottom:15px;
+     position:relative;
+}
+
+.portfolio {
+     /*padding-left:15px;*/
+}
+
+figcaption {
+     text-align:center;
+     line-height:60px;
+     width:100%;
+     position:absolute;
+     bottom:25px;
+}
+
+figcaption:hover {
+     color:black;
+}
+
+img {
+     width:100%;
+}
 
 .headshot {
-     max-width:20%;
+     max-width:200px;
      padding:10px;
+     float:left;
 }
 
-p {
-     display:inline-block;
+input, textarea {
+     width:100%;
+     line-height:35px;
 }
 
-.index-p {
+form {
+     display:flex;
+     flex-direction:column;
+     justify-content:center;
+}
 
+.input-message {
+     line-height:200px;
+}
+
+.submit-button {
+     margin-top:10px;
+     color:white;
+     width:20%;
+     padding:10px;
+     background-color:#4aaaa5;
+}
+
+.submit-button::hover {
+     background-color:black;
 }
 
 footer {
